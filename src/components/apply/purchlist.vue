@@ -12,7 +12,7 @@
           <p>下单时间：{{item.create_time.date}}</p>
         </div>
         <div  class="butsubmit">
-          <x-button mini :gradients="['#1D62F0', '#19D5FD']" @click.native="goOrderDetail(item.id)">申购详情</x-button>
+          <x-button mini :gradients="['#1AA9F8', '#1AA9F8']" @click.native="goOrderDetail(item.id)">申购详情</x-button>
           <!-- <x-button mini :gradients="['#1D62F0', '#19D5FD']" @click.native="goSendList(item.id)">收货详情</x-button> -->
           <!-- <x-button mini type="primary">关闭订单</x-button>
           <x-button mini type="warn">删除订单</x-button> -->
@@ -80,11 +80,12 @@ $bule:#00A0EA;
 $price:#E7454A;
 $borerbottom2:1px solid #dcdcdc;
 .orderInfo{
-  width: 100%;
-  // height: 160px;
+  width: 98%;
+  margin:10px auto;
   background-color: white;
   color:#A9A9A9;
-  border-bottom:$borerbottom2;
+  border-radius: 3px;
+  box-shadow: 0 5px 84px 0 rgba(4, 0, 0, 0.09); /* px */
 }
 .orderNo{
  width: 98%;

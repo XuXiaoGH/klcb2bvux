@@ -13,7 +13,7 @@
           <p>总&nbsp;&nbsp;&nbsp;价：<span class="price">￥{{item.price}}</span></p>
         </div>
         <div  class="butsubmit">
-          <x-button mini :gradients="['#1D62F0', '#19D5FD']" @click.native="senddetail(item.id)" >查看详情</x-button>
+          <x-button mini :gradients="['#1AA9F8', '#1AA9F8']" @click.native="senddetail(item.id)" >查看详情</x-button>
         </div>
            
          
@@ -38,6 +38,7 @@ export default {
     }
   },
   created () {
+    document.body.style.background = '#F2F2F2';
     this.getlist();
   },
   methods: {
@@ -69,18 +70,19 @@ export default {
 }
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 $borerbottom:1px solid #f8f8f8;
 $black:black;
 $bule:#00A0EA;
 $price:#E7454A;
 $borerbottom2:1px solid #dcdcdc;
 .orderInfo{
-  width: 100%;
-  // height: 160px;
+  width: 98%;
+  margin: 10px auto;
+  border-radius: 3px;
+  box-shadow: 0 5px 84px 0 rgba(4, 0, 0, 0.09); /* px */
   background-color: white;
   color:#A9A9A9;
-  border-bottom:$borerbottom2;
 }
 .orderNo{
  width: 98%;

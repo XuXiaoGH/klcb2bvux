@@ -104,7 +104,7 @@ export default {
 }
 </script>
 
-<style lang='scss'>
+<style lang='scss' scoped>
 $bsbeijing:#fff;
 $lvse:#04BE02;
 $ziticolor1:#fff;

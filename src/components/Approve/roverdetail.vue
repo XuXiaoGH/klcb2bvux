@@ -150,7 +150,7 @@ export default {
     }
 }
 </script>
-<style lang="scss">
+<style lang="scss" scoped>
 $borerbottom:1px solid #f8f8f8;
 $black:black;
 $bule:#00A0EA;
